@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 export default function Clicker() {
     //useState - vytvari promennou ktera ma svuj vlastni setter - metody ktera prenastaveni hodnotu promenne
+    //usetate(0) - 0 - hodnota ktera se nastavi pocatecne do cookies
     const [cookies, setCookies] = useState(0);
     const increaseCookies = () => {
         setCookies(cookies + 1);
